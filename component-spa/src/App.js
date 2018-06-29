@@ -4,7 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import Home from './components/home.js';
-import About from './components/about.js';
+import Demo from './components/demo';
 import Contact from './components/contact.js';
 
 class App extends Component {
@@ -21,7 +21,7 @@ class App extends Component {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/demo">Demo</Link>
             </li>
             <li>
               <Link to="/contact">Contact</Link>
@@ -33,7 +33,7 @@ class App extends Component {
           <hr />
     
           <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
+          <Route path="/demo" component={Demo} />
           <Route path="/contact" component={Contact} />
 
           <hr />

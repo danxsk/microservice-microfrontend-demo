@@ -64,6 +64,7 @@ services:
     working_dir: /var/www
     volumes:
       - ./component-api:/var/www
+      - '/var/www/vendor'
     ports:
       - '9998:9000'
     environment:
